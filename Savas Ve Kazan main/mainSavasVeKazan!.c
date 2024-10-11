@@ -23,6 +23,7 @@ int karsilasma(int a,int b){
 	return sonuc;
 }
 
+//  \033[35m ,  \033[0m  bunun gibi kodlar ANSI escape kodlari olarak adlandiriliyor ve renk ile oynar.
 
 void kullanici1(){
 	int x,y;
@@ -261,7 +262,6 @@ int main() {
 	system("cls");
 	printf("\033[0m");
 	printf("\n\t\t\t\033[1m \033[35m Savas Ve Kazan ! \033[0m\n\n\n");  
-	//  \033[35m ,  \033[0m bunlar gibi kodlar ANSI escape kodlarý olarak adlandýrýlýr ve renk ile oynar.
     printf("\n\n\n\n\n Sadece \033[31m 1 - 2 - 3 \033[0m tuslariyla saldirip savunabilirsin\n\n\n\n\n");
 	printf("\n\n1. kullanici ismi  :  ");
 	gets(name1);

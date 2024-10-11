@@ -26,7 +26,6 @@ int karsilasma(int a,int b){
 
 void kullanici1(){
 	int x,y;
-	printf("\033[0m");
 	printf("\n\n \033[38;5;208m Saldiri seklini sec  : \033[0m \n");
     x = getch();
 
@@ -40,7 +39,6 @@ void kullanici1(){
 
 void kullanici2(){
 	int c,d;
-	printf("\033[0m");
 	printf("\n\n");
 	printf("\t\t\t\t\t\t\t\t \033[38;5;208m Saldiri seklini sec  : \033[0m \n");
 	c = getch();
@@ -263,7 +261,7 @@ int main() {
 	system("cls");
 	printf("\033[0m");
 	printf("\n\t\t\t\033[1m \033[35m Savas Ve Kazan ! \033[0m\n\n\n");  
-	//  \033[35m ,  \033[0m bunlar gibi kodlar ANSI escape kodlarý olarak adlandýrýlýr ve renk ile oynar.
+	//  \033[35m ,  \033[0m bunlar gibi kodlar ANSI escape kodlarÃ½ olarak adlandÃ½rÃ½lÃ½r ve renk ile oynar.
     printf("\n\n\n\n\n Sadece \033[31m 1 - 2 - 3 \033[0m tuslariyla saldirip savunabilirsin\n\n\n\n\n");
 	printf("\n\n1. kullanici ismi  :  ");
 	gets(name1);

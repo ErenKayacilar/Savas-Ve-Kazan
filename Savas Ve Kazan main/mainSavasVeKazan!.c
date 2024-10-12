@@ -27,11 +27,20 @@ int karsilasma(int a,int b){
 
 void kullanici1(){
 	int x,y;
+	printf("\033[0m");
 	printf("\n\n \033[38;5;208m Saldiri seklini sec  : \033[0m \n");
-    x = getch();
+	x = getch();
+    while( x<49 || x>51 ){
+    	printf("\n Yanlis saldiri sekli birdaha secin");
+    	x = getch();
+	}
 
 	printf("\t\t\t\t\t\t\t\t \033[38;5;208m Savunma seklini sec  : \033[0m ");
 	y = getch();
+    while( y<49 || y>51 ){
+    	printf("\n Yanlis savunma sekli birdaha secin");
+    	y = getch();
+	}
 
     if(karsilasma(x,y) == 0){
     	can2--;
@@ -40,12 +49,21 @@ void kullanici1(){
 
 void kullanici2(){
 	int c,d;
+	printf("\033[0m");
 	printf("\n\n");
 	printf("\t\t\t\t\t\t\t\t \033[38;5;208m Saldiri seklini sec  : \033[0m \n");
 	c = getch();
+    while( c<49 || c>51 ){
+    	printf("\n\t\t\t\t\t\t\t\t\t Yanlis saldiri sekli birdaha secin");
+    	c = getch();
+	}
 
 	printf("\033[38;5;208m Savunma seklini sec  : \033[0m ");
-	d = getch();	
+	d = getch();
+    while( d<49 || d>51 ){
+    	printf("\n \t\t\t\t\t\t\t\t Yanlis savunma sekli birdaha secin");
+    	d = getch();
+	}
 
 	if(karsilasma(c,d) == 0){
 		can1--;
